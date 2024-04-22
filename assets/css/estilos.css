@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../imgs/fondo.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 100px;
+}
+
+/* Formulario */
+
+#preview {
+  height: 200px;
+  background-image: url(../imgs/lion.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/* Tabla de Participantes */
+
+#Animales {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+#Animales div div {
+  transition: all 200ms;
+}
+
+#Animales div >div:hover {
+  box-shadow: 0px 1px 5px 1px;
+}
+
+.participante {
+  max-width: 30%;
+}
+
+/* Modal */
+
+.modal-dialog{
+    max-width: 85% !important;
+}
+
+
+.animal-img-container img {
+  width: 200px; /* Fijamos el ancho a 200px */
+  height: auto; /* Mantenemos la proporción de aspecto */
+  display: block; /* Para que la imagen no tenga espacio adicional debajo */
+  margin: 0 auto 20px auto; /* Centramos la imagen y añadimos margen abajo */
+}
